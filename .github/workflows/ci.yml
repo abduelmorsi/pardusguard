@@ -30,7 +30,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-4-dev libgirepository1.0-dev gobject-introspection gir1.2-gtk-4.0
+          sudo apt-get install -y pkg-config libgtk-4-dev libgirepository-2.0-dev gobject-introspection gir1.2-gtk-4.0 libcairo2-dev
       - name: Install Python dependencies
         run: pip install -r requirements.txt
       - name: Run tests
